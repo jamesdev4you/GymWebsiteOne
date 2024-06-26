@@ -55,4 +55,29 @@ const HomeTextLinkButton = (props) => (
   </Button>
 );
 
-export { HomeHeaderButton, HomeCTAButton, HomeTextLinkButton };
+const HomeTestimonialButton = (props) => (
+  <Button
+    variant='contained'
+    sx={{
+      backgroundColor: '#000000',
+      color: 'primary.main',
+      '&:hover': {
+        backgroundColor: 'primary.main',
+        color: '#000000',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: '#000000',
+        fontWeight: 'bold',
+      },
+    }}
+  >
+    Click Here To See Even More Results
+  </Button>
+);
+
+export {
+  HomeHeaderButton,
+  HomeCTAButton,
+  HomeTextLinkButton,
+  HomeTestimonialButton,
+};

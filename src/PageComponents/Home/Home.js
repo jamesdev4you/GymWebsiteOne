@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import HomeHeader from './HomeHeader';
 import HomeCTA1 from './HomeCTA1';
 import HomeOverlap from './HomeOverlap.js';
-import fillerPic from '../../assets/homeheader.png';
+import HomeTwoOptions from './HomeTwoOptions.js';
+import HomeTestimonials from './HomeTestimonials.js';
 import Typography from '@mui/material/Typography';
-import { HomeTextLinkButton } from '../styledComponents.js';
 
 const Home = () => {
   return (
@@ -17,129 +17,92 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
+        gap: '3em',
       }}
     >
       <HomeHeader />
       <HomeCTA1 />
       <HomeOverlap />
+      <HomeTwoOptions />
+      <HomeTestimonials />
       <Box
         sx={{
           width: '100%',
-          height: '90vh',
+          height: 'auto',
           paddingLeft: '22em',
           paddingRight: '22em',
-          alignItems: 'center',
-          justifyContent: 'space-between',
+          paddingTop: '3em',
+          paddingBottom: '3em',
           display: 'flex',
-          gap: '1.5em',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          backgroundColor: 'secondary.main',
+          gap: '1em',
         }}
       >
-        <Box
+        <Typography
+          variant='h4'
           sx={{
-            width: '47%',
-            height: '80%',
-            backgroundColor: 'white',
-            boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '1em',
-            borderRadius: '5px',
+            fontWeight: 'bold',
+            color: 'primary.main',
           }}
         >
-          <Box
-            sx={{
-              width: '90%',
-              height: '50%',
-              backgroundImage: `url(${fillerPic})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'bottom',
-              marginBottom: '1em',
-            }}
-          />
-          <Typography
-            variant='h5'
-            sx={{
-              fontWeight: 'bold',
-              color: 'secondary.main',
-              textAlign: 'center',
-              width: '90%',
-            }}
-          >
-            1-2-1 PERSONAL TRAINING
-          </Typography>
-          <Typography
-            variant='p'
-            sx={{
-              color: 'secondary.main',
-              textAlign: 'center',
-              width: '90%',
-            }}
-          >
-            1-2-1 personal training is the ultimate investment in your health.
-            You'll be working directly with your coach in our private studio,
-            following a bespoke plan to ensure you hit your goals in record
-            time. Whether you want to slim down, add muscle or anything in
-            between, our personal training packages will get you there in a fun
-            and sustainable way
-          </Typography>
-          <HomeTextLinkButton />
-        </Box>
-        <Box
+          OUR MISSION
+        </Typography>
+        <Typography
+          variant='h6'
           sx={{
-            width: '47%',
-            height: '80%',
-            backgroundColor: 'white',
-            boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '1em',
-            borderRadius: '5px',
+            color: 'primary.main',
+            textAlign: 'center',
+            width: '100%',
           }}
         >
-          <Box
-            sx={{
-              width: '90%',
-              height: '50%',
-              backgroundImage: `url(${fillerPic})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'bottom',
-              marginBottom: '1em',
-            }}
-          />
-          <Typography
-            variant='h5'
-            sx={{
-              fontWeight: 'bold',
-              color: 'secondary.main',
-              textAlign: 'center',
-              width: '90%',
-            }}
-          >
-            NUTRITION COACHING
-          </Typography>
-          <Typography
-            variant='p'
-            sx={{
-              color: 'secondary.main',
-              textAlign: 'center',
-              width: '90%',
-            }}
-          >
-            We'll teach you how to take control of your health and weight,
-            without relying on any specific diet or products, with our 1-2-1
-            nutrition coaching. You'll working alongside a qualified
-            nutritionist to build a sustainable approach together, so you'll not
-            only hit your physique goals, but be able to stay there without
-            rigid diets.
-          </Typography>
-          <HomeTextLinkButton />
-        </Box>
+          We're committed to helping over 1,000 people in Milton Keynes to live
+          longer, stronger, more confident lives. It's why we offer free trial
+          sessions, and our{' '}
+          <span style={{ color: '#c2a43a' }}>
+            iron-clad money back guarantee on results{' '}
+          </span>{' '}
+          (yes, really)
+        </Typography>
+        <Typography
+          variant='h6'
+          sx={{
+            color: 'primary.main',
+            textAlign: 'center',
+            width: '100%',
+          }}
+        >
+          If you’re desperate to get back into your favourite clothes that have
+          been relegated to the back of the closet, are tired of your work
+          shirts beginning to feel the strain around your stomach, and feel sick
+          of no-longer having the “get-up-and-go” you felt when you were
+          younger? We will guide you to getting that mojo back, to feel
+          confident the next time you’re on a beach, making a presentation at
+          work, or running around with your kids
+        </Typography>
+        <Typography
+          variant='h6'
+          sx={{
+            color: 'primary.main',
+            textAlign: 'center',
+            width: '100%',
+          }}
+        >
+          Training & addressing your diet with the correct approach adds to your
+          life exponentially, through increasing your energy, decreasing your
+          stress, heightening your mood, boosting long-term health, and
+          equipping you with confidence in your everyday strength and
+          appearance. Which is exactly why we designed The Armoury from the
+          ground up to be{' '}
+          <span style={{ fontWeight: 'bold' }}>
+            the best 1-2-1 & Small Group Personal Training Studio in Milton
+            Keynes.
+          </span>{' '}
+          If you’d like to be part of a coaching environment that puts you
+          first? Get in touch
+        </Typography>
       </Box>
     </Box>
   );
