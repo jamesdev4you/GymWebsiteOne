@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Birds';
+  src: local('Birds'), url(../src/Fonts/birds.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mono';
+  src: local('Mono'), url(../src/Fonts/mono.otf) format('opentype');
+}
+
+.stylesFlexBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.homeMenuBox {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  gap: 50px;
+}
+
+.contactFlexBox {
+  width: 80%;
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1200px) {
+  .homeMenuBox {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contactFlexBox {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .stylesFlexBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactFlexBox {
+    gap: 50px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
