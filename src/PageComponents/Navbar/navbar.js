@@ -20,7 +20,6 @@ const navItems = [
   { text: 'Home', href: '/' },
   { text: 'About', href: '/about' },
   { text: 'Programmes', href: '/programmes' },
-  { text: 'Success Stories', href: '/successstories' },
   { text: 'Contact', href: '/contact' },
   { text: 'Train With Us', href: '/trainwithus' },
 ];

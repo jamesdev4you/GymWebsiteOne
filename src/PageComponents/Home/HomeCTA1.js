@@ -65,7 +65,7 @@ const HomeCTA1 = () => {
           height: '5vh',
         }}
       >
-        <HomeCTAButton />
+        <HomeCTAButton title={'Try Us Out'} />
       </Box>
     </Box>
   );

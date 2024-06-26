@@ -26,14 +26,14 @@ const HomeCTAButton = (props) => (
       '&:hover': {
         backgroundColor: 'primary.main',
         color: 'info.main',
-        borderWidth: '1px',
+        borderWidth: '2px',
         borderStyle: 'solid',
         borderColor: 'info.main',
         fontWeight: 'bold',
       },
     }}
   >
-    Try Us Out
+    {props.title}
   </Button>
 );
 
@@ -64,7 +64,7 @@ const HomeTestimonialButton = (props) => (
       '&:hover': {
         backgroundColor: 'primary.main',
         color: '#000000',
-        borderWidth: '1px',
+        borderWidth: '2px',
         borderStyle: 'solid',
         borderColor: '#000000',
         fontWeight: 'bold',
@@ -75,9 +75,31 @@ const HomeTestimonialButton = (props) => (
   </Button>
 );
 
+const HomeMissionButton = (props) => (
+  <Button
+    variant='contained'
+    sx={{
+      backgroundColor: 'info.main',
+      color: 'secondary.main',
+      borderRadius: '20px',
+      '&:hover': {
+        backgroundColor: 'secondary.main',
+        color: 'info.main',
+        borderWidth: '2px',
+        borderStyle: 'solid',
+        borderColor: 'info.main',
+        fontWeight: 'bold',
+      },
+    }}
+  >
+    {props.title}
+  </Button>
+);
+
 export {
   HomeHeaderButton,
   HomeCTAButton,
   HomeTextLinkButton,
   HomeTestimonialButton,
+  HomeMissionButton,
 };

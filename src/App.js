@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from './PageComponents/Navbar/navbar';
 import Home from './PageComponents/Home/Home';
-import Box from '@mui/material/Box';
+import About from './PageComponents/About/About';
+import Contact from './PageComponents/Contact/Contact';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<NavBar />} color='secondary'>
           <Route path='/' element={<Home />} color='secondary' />
+          <Route path='/about' element={<About />} color='secondary' />
         </Route>
       </Routes>
     </ThemeProvider>

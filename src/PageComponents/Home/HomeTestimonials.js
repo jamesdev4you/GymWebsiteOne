@@ -454,7 +454,9 @@ const HomeTestimonials = () => {
           </Box>
         </Box>
       </Box>
-      <HomeTestimonialButton />
+      <Box sx={{ height: '7vh' }}>
+        <HomeTestimonialButton />
+      </Box>
     </Box>
   );
 };
