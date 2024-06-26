@@ -27,6 +27,7 @@ function App() {
         <Route path='/' element={<NavBar />} color='secondary'>
           <Route path='/' element={<Home />} color='secondary' />
           <Route path='/about' element={<About />} color='secondary' />
+          <Route path='/contact' element={<Contact />} color='secondary' />
         </Route>
       </Routes>
     </ThemeProvider>

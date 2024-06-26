@@ -1,0 +1,120 @@
+import React from 'react';
+import BeforeAfter1 from '../../assets/beforeafter1.png';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
+const ContactBeforeAfter = () => {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        paddingLeft: '22em',
+        paddingRight: '22em',
+        marginTop: '5em',
+        marginBottom: '5em',
+        gap: '2em',
+        backgroundColor: 'white',
+        width: '100%',
+        height: 'auto',
+      }}
+    >
+      <Box
+        sx={{
+          height: '30vh',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Box
+          sx={{
+            width: '30%',
+            height: '100%',
+            backgroundImage: `url(${BeforeAfter1})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom',
+            marginBottom: '1em',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: 'secondary.main',
+          }}
+        />
+        <Box
+          sx={{
+            width: '30%',
+            height: '100%',
+            backgroundImage: `url(${BeforeAfter1})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom',
+            marginBottom: '1em',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: 'secondary.main',
+          }}
+        />
+        <Box
+          sx={{
+            width: '30%',
+            height: '100%',
+            backgroundImage: `url(${BeforeAfter1})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom',
+            marginBottom: '1em',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: 'secondary.main',
+          }}
+        />
+      </Box>
+      <List
+        sx={{
+          listStyleType: 'disc',
+          marginLeft: '1em',
+          color: 'secondary.main',
+          width: '90%',
+        }}
+      >
+        <ListItem sx={{ display: 'list-item' }}>
+          <Typography variant='h5'>
+            ​Do you want to feel amazing in 2024, but you've fallen out of (or
+            never gotten into) a consistent exercise routine
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item' }}>
+          <Typography variant='h5'>
+            Do you want to trim up, but you don't want to have to restrict
+            yourself and limit your social life?
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item' }}>
+          <Typography variant='h5'>
+            Do you find normal gyms boring, and want a fitness space you
+            actually enjoy?
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item' }}>
+          <Typography variant='h5'>
+            Are you fed up of quick fixes, and want a solution that actually
+            sticks for life?
+          </Typography>
+        </ListItem>
+      </List>
+      <Typography variant='h5'>
+        If you can relate, and feel ready to move your health and fitness up
+        your list of priorities, then scroll up and hit apply- one of our
+        friendly PTs will give you a call and see if we can help
+      </Typography>
+    </Box>
+  );
+};
+
+export default ContactBeforeAfter;
