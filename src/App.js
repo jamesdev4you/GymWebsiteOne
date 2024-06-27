@@ -3,6 +3,7 @@ import NavBar from './PageComponents/Navbar/navbar';
 import Home from './PageComponents/Home/Home';
 import About from './PageComponents/About/About';
 import Contact from './PageComponents/Contact/Contact';
+import TrainWithUs from './PageComponents/TrainWithUs/TrainWithUs';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 
@@ -28,6 +29,11 @@ function App() {
           <Route path='/' element={<Home />} color='secondary' />
           <Route path='/about' element={<About />} color='secondary' />
           <Route path='/contact' element={<Contact />} color='secondary' />
+          <Route
+            path='/trainwithus'
+            element={<TrainWithUs />}
+            color='secondary'
+          />
         </Route>
       </Routes>
     </ThemeProvider>

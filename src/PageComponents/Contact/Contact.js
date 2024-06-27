@@ -1,12 +1,10 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Review from '../../assets/review.png';
 import ContactHeader from './ContactHeader.js';
 import ContactBeforeAfter from './ContactBeforeAfter.js';
 import ContactAbout from './ContactAbout.js';
 import ContactTestimonials from './ContactTestimonials.js';
+import ContactFreeTrial from './ContactFreeTrial.js';
 
 const Contact = () => {
   return (
@@ -26,6 +24,7 @@ const Contact = () => {
       <ContactAbout />
       <ContactTestimonials />
       <ContactAbout />
+      <ContactFreeTrial />
     </Box>
   );
 };
