@@ -8,10 +8,24 @@ const HomeCTA1 = () => {
     <Box
       sx={{
         backgroundColor: 'primary.main',
-        height: '80vh',
+        height: 'auto',
         weight: '100%',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingTop: '1em',
+        paddingBottom: '1em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -19,7 +33,7 @@ const HomeCTA1 = () => {
         gap: '1em',
       }}
     >
-      <Typography variant='h4' sx={{ fontWeight: 'bold' }}>
+      <Typography variant='h4' sx={{ fontWeight: 'bold', textAlign: 'center' }}>
         {' '}
         IT'S TIME TO PUT YOURSELF FIRST
       </Typography>

@@ -10,8 +10,20 @@ const HomeOverlap = () => {
       sx={{
         height: '140vh',
         width: '100%',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'start',

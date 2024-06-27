@@ -12,13 +12,46 @@ const HomeHeader = () => {
       sx={{
         backgroundColor: 'black',
         width: '100%',
-        height: '110vh',
+        height: {
+          xl: '110vh',
+          lg: '110vh',
+          md: '110vh',
+          sm: '110vh',
+          xs: 'auto',
+        },
         backgroundImage: `url(${HomeHeaderPic})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'bottom',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+
+        paddingTop: {
+          xl: '0em',
+          lg: '0em',
+          md: '0em',
+          sm: '0em',
+          xs: '10em',
+        },
+        paddingBottom: {
+          xl: '0em',
+          lg: '0em',
+          md: '0em',
+          sm: '0em',
+          xs: '10em',
+        },
         display: 'flex',
         alignItems: 'end',
         justifyContent: 'center',
@@ -31,7 +64,7 @@ const HomeHeader = () => {
           alignItems: 'start',
           justifyContent: 'center',
           flexDirection: 'column',
-          width: '55%',
+          width: { xl: '60%', lg: '100%' },
           gap: '2em',
         }}
       >
@@ -58,8 +91,14 @@ const HomeHeader = () => {
         <Grid
           container
           sx={{
-            width: '80%',
-            height: '32vh',
+            width: { xl: '80%', lg: '100%' },
+            height: {
+              xl: '32vh',
+              lg: '32vh',
+              md: '32vh',
+              sm: '32vh',
+              xs: '50vh',
+            },
             backgroundColor: 'primary.main',
             borderRadius: '5px',
             marginLeft: 'auto',
@@ -70,7 +109,8 @@ const HomeHeader = () => {
         >
           <Grid
             item
-            xs={6}
+            sm={6}
+            xs={12}
             sx={{
               backgroundColor: 'primary.main',
               display: 'flex',
@@ -86,6 +126,7 @@ const HomeHeader = () => {
               label='First Name *'
               variant='outlined'
               sx={{
+                width: '90%',
                 '& label.Mui-focused': {
                   color: '#1B1E1E',
                 },
@@ -117,7 +158,8 @@ const HomeHeader = () => {
           </Grid>
           <Grid
             item
-            xs={6}
+            sm={6}
+            xs={12}
             sx={{
               backgroundColor: 'primary.main',
               display: 'flex',
@@ -132,6 +174,7 @@ const HomeHeader = () => {
               label='Last Name *'
               variant='outlined'
               sx={{
+                width: '90%',
                 '& label.Mui-focused': {
                   color: '#1B1E1E',
                 },
@@ -163,7 +206,8 @@ const HomeHeader = () => {
           </Grid>
           <Grid
             item
-            xs={6}
+            sm={6}
+            xs={12}
             sx={{
               backgroundColor: 'primary.main',
               display: 'flex',
@@ -177,6 +221,7 @@ const HomeHeader = () => {
               label='Email *'
               variant='outlined'
               sx={{
+                width: '90%',
                 '& label.Mui-focused': {
                   color: '#1B1E1E',
                 },
@@ -208,7 +253,8 @@ const HomeHeader = () => {
           </Grid>
           <Grid
             item
-            xs={6}
+            sm={6}
+            xs={12}
             sx={{
               backgroundColor: 'primary.main',
               display: 'flex',
@@ -222,6 +268,7 @@ const HomeHeader = () => {
               label='Phone Number *'
               variant='outlined'
               sx={{
+                width: '90%',
                 '& label.Mui-focused': {
                   color: '#1B1E1E',
                 },
