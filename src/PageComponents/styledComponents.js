@@ -23,6 +23,9 @@ const HomeCTAButton = (props) => (
     sx={{
       backgroundColor: 'info.main',
       color: 'primary.main',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: 'info.main',
       '&:hover': {
         backgroundColor: 'primary.main',
         color: 'info.main',
@@ -61,6 +64,9 @@ const HomeTestimonialButton = (props) => (
     sx={{
       backgroundColor: '#000000',
       color: 'primary.main',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: '#000000',
       '&:hover': {
         backgroundColor: 'primary.main',
         color: '#000000',
@@ -82,6 +88,9 @@ const HomeMissionButton = (props) => (
       backgroundColor: 'info.main',
       color: 'secondary.main',
       borderRadius: '20px',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: 'info.main',
       '&:hover': {
         backgroundColor: 'secondary.main',
         color: 'info.main',
