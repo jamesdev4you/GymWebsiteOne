@@ -1,9 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import TrainWithUsHeader from './TrainWithUsHeader';
-import TrainWithUsContent from './TrainWithUsContent.js';
+import OnePTHeader from './OnePTHeader';
+import OnePTContent from './OnePTContent';
 
-const TrainWithUs = () => {
+const OnePT = () => {
   return (
     <Box
       sx={{
@@ -17,10 +17,10 @@ const TrainWithUs = () => {
         marginBottom: '2em',
       }}
     >
-      <TrainWithUsHeader />
-      <TrainWithUsContent />
+      <OnePTHeader />
+      <OnePTContent />
     </Box>
   );
 };
 
-export default TrainWithUs;
+export default OnePT;

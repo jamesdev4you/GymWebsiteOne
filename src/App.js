@@ -4,6 +4,9 @@ import Home from './PageComponents/Home/Home';
 import About from './PageComponents/About/About';
 import Contact from './PageComponents/Contact/Contact';
 import TrainWithUs from './PageComponents/TrainWithUs/TrainWithUs';
+import SmallGroupPT from './PageComponents/SmallGroupPT/SmallGroupPT';
+import OnePT from './PageComponents/OnePT/OnePT';
+import NutritionCoaching from './PageComponents/NutritionCoaching/NutritionCoaching';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 
@@ -32,6 +35,21 @@ function App() {
           <Route
             path='/trainwithus'
             element={<TrainWithUs />}
+            color='secondary'
+          />
+          <Route
+            path='/programs/smallgrouppersonaltraining'
+            element={<SmallGroupPT />}
+            color='secondary'
+          />
+          <Route
+            path='/programs/11personaltraining'
+            element={<OnePT />}
+            color='secondary'
+          />
+          <Route
+            path='/programs/nutritioncoaching'
+            element={<NutritionCoaching />}
             color='secondary'
           />
         </Route>

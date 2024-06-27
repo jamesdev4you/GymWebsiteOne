@@ -1,9 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import TrainWithUsHeader from './TrainWithUsHeader';
-import TrainWithUsContent from './TrainWithUsContent.js';
+import SmallGroupPTHeader from './SmallGroupPTHeader';
+import SmallGroupPTContent from './SmallGroupPTContent';
 
-const TrainWithUs = () => {
+const SmallGroupPT = () => {
   return (
     <Box
       sx={{
@@ -17,10 +17,10 @@ const TrainWithUs = () => {
         marginBottom: '2em',
       }}
     >
-      <TrainWithUsHeader />
-      <TrainWithUsContent />
+      <SmallGroupPTHeader />
+      <SmallGroupPTContent />
     </Box>
   );
 };
 
-export default TrainWithUs;
+export default SmallGroupPT;

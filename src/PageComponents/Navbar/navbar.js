@@ -14,12 +14,25 @@ import Logo from '../../assets/logo.png';
 import '../../navlink.css';
 import '../../index.css';
 import { Outlet } from 'react-router-dom';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const drawerWidth = 240;
 const navItems = [
   { text: 'Home', href: '/' },
   { text: 'About', href: '/about' },
-  { text: 'Programmes', href: '/programmes' },
+  {
+    text: 'Programs',
+    href: '/programs',
+    submenu: [
+      {
+        text: 'Small Group Personal Training',
+        href: '/programs/smallgrouppersonaltraining',
+      },
+      { text: '1:1 Personal Training', href: '/programs/11personaltraining' },
+      { text: 'Nutrition Coaching', href: '/programs/nutritioncoaching' },
+    ],
+  },
   { text: 'Contact', href: '/contact' },
   { text: 'Train With Us', href: '/trainwithus' },
 ];
@@ -29,6 +42,25 @@ export default function NavBar(props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [submenuAnchorEl, setSubmenuAnchorEl] = useState(null);
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleSubmenuOpen = (event) => {
+    setSubmenuAnchorEl(event.currentTarget);
+  };
+
+  const handleSubmenuClose = () => {
+    setSubmenuAnchorEl(null);
   };
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -83,8 +115,9 @@ export default function NavBar(props) {
             backgroundColor: 'primary.main',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            gap: '15em',
+            justifyContent: 'space-between',
+            marginLeft: '20em',
+            marginRight: '22em',
           }}
         >
           <IconButton
@@ -120,19 +153,52 @@ export default function NavBar(props) {
               display: { xs: 'none', sm: 'none', md: 'block' },
             }}
           >
-            {navItems.map((item) => (
-              <NavLink
-                key={item.href}
-                className='menu_link'
-                style={{
-                  fontFamily: 'Birds',
-                  textTransform: 'none',
-                }}
-                to={item.href}
-              >
-                {item.text}
-              </NavLink>
-            ))}
+            {console.log(navItems, 'yo')}
+            {navItems.map((item) =>
+              item.submenu ? (
+                <>
+                  <NavLink
+                    className='menu_link'
+                    style={{
+                      fontFamily: 'Birds',
+                      textTransform: 'none',
+                    }}
+                    onClick={handleSubmenuOpen}
+                  >
+                    {item.text}
+                  </NavLink>
+                  <Menu
+                    anchorEl={submenuAnchorEl}
+                    open={Boolean(submenuAnchorEl)}
+                    onClose={handleSubmenuClose}
+                    MenuListProps={{
+                      'aria-labelledby': 'basic-button',
+                    }}
+                  >
+                    {item.submenu.map((submenuItem) => (
+                      <MenuItem
+                        key={submenuItem.href}
+                        onClick={handleSubmenuClose}
+                        component={NavLink}
+                        to={submenuItem.href}
+                        sx={{ height: '50px' }}
+                      >
+                        {submenuItem.text}
+                      </MenuItem>
+                    ))}
+                  </Menu>
+                </>
+              ) : (
+                <NavLink
+                  key={item.href}
+                  className='menu_link'
+                  style={{ fontFamily: 'Birds', textTransform: 'none' }}
+                  to={item.href}
+                >
+                  {item.text}
+                </NavLink>
+              )
+            )}
           </Box>
         </Toolbar>
       </AppBar>
