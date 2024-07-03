@@ -14,8 +14,20 @@ const ContactFreeTrial = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         paddingBottom: '5em',
         gap: '3em',
         backgroundColor: 'white',
@@ -25,11 +37,24 @@ const ContactFreeTrial = () => {
     >
       <Box
         sx={{
-          height: '30vh',
+          height: {
+            xl: '30vh',
+            lg: '22vh',
+            md: '20vh',
+            sm: '20vh',
+            xs: '12vh',
+          },
           width: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'row',
+            xs: 'row',
+          },
         }}
       >
         <Box
@@ -88,10 +113,10 @@ const ContactFreeTrial = () => {
         }}
       >
         <Typography
-          variant='h3'
+          variant='h5'
           sx={{ width: '100%', color: 'secondary.main', textAlign: 'center' }}
         >
-          START YOUR TRANSFORMATION -{' '}
+          START YOUR TRANSFORMATION
         </Typography>
         <Typography
           variant='h3'
@@ -114,7 +139,13 @@ const ContactFreeTrial = () => {
           alignItems: 'start',
           justifyContent: 'center',
           flexDirection: 'column',
-          width: '45%',
+          width: {
+            xl: '50%',
+            lg: '70%',
+            md: '70%',
+            sm: '80%',
+            xs: '100%',
+          },
           gap: '2em',
           borderWidth: '1px',
           borderStyle: 'dotted',

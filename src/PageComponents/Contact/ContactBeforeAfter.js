@@ -13,10 +13,21 @@ const ContactBeforeAfter = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         marginTop: '5em',
-        marginBottom: '5em',
         gap: '2em',
         backgroundColor: 'white',
         width: '100%',
@@ -25,16 +36,29 @@ const ContactBeforeAfter = () => {
     >
       <Box
         sx={{
-          height: '30vh',
+          height: {
+            xl: '30vh',
+            lg: '22vh',
+            md: '20vh',
+            sm: '20vh',
+            xs: '12vh',
+          },
           width: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'row',
+            xs: 'row',
+          },
         }}
       >
         <Box
           sx={{
-            width: '30%',
+            width: '32%',
             height: '100%',
             backgroundImage: `url(${BeforeAfter1})`,
             backgroundRepeat: 'no-repeat',
@@ -48,7 +72,7 @@ const ContactBeforeAfter = () => {
         />
         <Box
           sx={{
-            width: '30%',
+            width: '32%',
             height: '100%',
             backgroundImage: `url(${BeforeAfter1})`,
             backgroundRepeat: 'no-repeat',
@@ -62,7 +86,7 @@ const ContactBeforeAfter = () => {
         />
         <Box
           sx={{
-            width: '30%',
+            width: '32%',
             height: '100%',
             backgroundImage: `url(${BeforeAfter1})`,
             backgroundRepeat: 'no-repeat',

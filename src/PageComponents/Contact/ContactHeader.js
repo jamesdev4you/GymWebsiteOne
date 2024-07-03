@@ -49,7 +49,7 @@ const ContactHeader = () => {
       }}
     >
       <Typography
-        variant='h3'
+        variant='h5'
         sx={{
           color: 'info.main',
           fontWeight: 'bold',

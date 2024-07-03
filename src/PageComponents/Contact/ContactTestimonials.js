@@ -8,11 +8,23 @@ const ContactTestimonials = () => {
   return (
     <Box
       sx={{
-        paddingLeft: '20em',
-        paddingRight: '20em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '12em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '12em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         marginBottom: '5em',
         width: '100%',
-        height: '100vh',
+        height: 'auto',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -30,13 +42,15 @@ const ContactTestimonials = () => {
         spacing={2}
         sx={{
           width: '100%',
-          height: '100%',
+          height: 'auto',
         }}
       >
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -45,8 +59,10 @@ const ContactTestimonials = () => {
         ></Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -55,8 +71,10 @@ const ContactTestimonials = () => {
         ></Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -65,8 +83,10 @@ const ContactTestimonials = () => {
         ></Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -75,8 +95,10 @@ const ContactTestimonials = () => {
         ></Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -85,8 +107,10 @@ const ContactTestimonials = () => {
         ></Grid>
         <Grid
           item
-          xs={4}
+          sm={4}
+          xs={12}
           sx={{
+            height: { md: '350px', sm: '250px', xs: '400px' },
             backgroundImage: `url(${Review})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
