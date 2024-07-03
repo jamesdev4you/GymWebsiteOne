@@ -10,10 +10,36 @@ const ContactHeader = () => {
     <Box
       sx={{
         width: '100%',
-        height: '90vh',
-        paddingLeft: '22em',
-        paddingRight: '22em',
-        marginTop: '5em',
+        height: 'auto',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+
+        paddingTop: {
+          xl: '8em',
+          lg: '8em',
+          md: '8em',
+          sm: '5em',
+          xs: '8em',
+        },
+        paddingBottom: {
+          xl: '2em',
+          lg: '1em',
+          md: '1em',
+          sm: '1em',
+          xs: '1em',
+        },
         backgroundColor: 'secondary.main',
         display: 'flex',
         alignItems: 'center',
@@ -71,7 +97,13 @@ const ContactHeader = () => {
           alignItems: 'start',
           justifyContent: 'center',
           flexDirection: 'column',
-          width: '45%',
+          width: {
+            xl: '50%',
+            lg: '70%',
+            md: '70%',
+            sm: '80%',
+            xs: '100%',
+          },
           gap: '2em',
         }}
       >

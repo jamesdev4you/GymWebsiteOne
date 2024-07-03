@@ -10,8 +10,20 @@ const HomeCTA1 = () => {
         backgroundColor: 'primary.main',
         height: 'auto',
         weight: '100%',
-        paddingTop: '1em',
-        paddingBottom: '1em',
+        paddingTop: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '1em',
+        },
+        paddingBottom: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '1em',
+        },
         paddingLeft: {
           xl: '20em',
           lg: '18em',

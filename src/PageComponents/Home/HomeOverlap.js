@@ -8,7 +8,7 @@ const HomeOverlap = () => {
   return (
     <Box
       sx={{
-        height: '140vh',
+        height: 'auto',
         width: '100%',
         paddingLeft: {
           xl: '20em',
@@ -69,7 +69,13 @@ const HomeOverlap = () => {
           sx={{
             color: 'primary.main',
             marginRight: 'auto',
-            width: '60%',
+            width: {
+              xl: '60%',
+              lg: '60%',
+              md: '80%',
+              sm: '90%',
+              xs: '90%',
+            },
           }}
         >
           Our coaching options have been designed from the ground up to put you
@@ -82,7 +88,7 @@ const HomeOverlap = () => {
         <Box
           sx={{
             width: '100%',
-            height: '100vh',
+            height: 'auto',
             backgroundColor: 'white',
             boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
             display: 'flex',
@@ -91,6 +97,7 @@ const HomeOverlap = () => {
             justifyContent: 'center',
             gap: '1em',
             borderRadius: '5px',
+            padding: '1em',
           }}
         >
           <Box
@@ -99,8 +106,8 @@ const HomeOverlap = () => {
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom',
-              width: '90%',
-              height: '60%',
+              width: '100%',
+              height: '400px',
               marginBottom: '2em',
             }}
           />

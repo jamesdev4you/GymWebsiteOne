@@ -9,19 +9,64 @@ const HomeTwoOptions = () => {
     <Box
       sx={{
         width: '100%',
-        height: '90vh',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        height: 'auto',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingTop: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '1em',
+        },
+        paddingBottom: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '1em',
+        },
         alignItems: 'center',
         justifyContent: 'space-between',
         display: 'flex',
-        gap: '1.5em',
+        flexDirection: {
+          xl: 'row',
+          lg: 'column',
+          md: 'column',
+          sm: 'column',
+          xs: 'column',
+        },
+        gap: {
+          xl: '1em',
+          lg: '5em',
+          md: '3em',
+          sm: '2em',
+          xs: '2em',
+        },
       }}
     >
       <Box
         sx={{
-          width: '47%',
-          height: '80%',
+          width: {
+            xl: '47%',
+            lg: '100%',
+            md: '100%',
+            sm: '100%',
+            xs: '100%',
+          },
+          height: 'auto',
           backgroundColor: 'white',
           boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           display: 'flex',
@@ -30,12 +75,13 @@ const HomeTwoOptions = () => {
           justifyContent: 'center',
           gap: '1em',
           borderRadius: '5px',
+          padding: '1em',
         }}
       >
         <Box
           sx={{
-            width: '90%',
-            height: '50%',
+            width: '100%',
+            height: '400px',
             backgroundImage: `url(${fillerPic})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -73,8 +119,14 @@ const HomeTwoOptions = () => {
       </Box>
       <Box
         sx={{
-          width: '47%',
-          height: '80%',
+          width: {
+            xl: '47%',
+            lg: '100%',
+            md: '100%',
+            sm: '100%',
+            xs: '100%',
+          },
+          height: 'auto',
           backgroundColor: 'white',
           boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           display: 'flex',
@@ -83,12 +135,13 @@ const HomeTwoOptions = () => {
           justifyContent: 'center',
           gap: '1em',
           borderRadius: '5px',
+          padding: '1em',
         }}
       >
         <Box
           sx={{
-            width: '90%',
-            height: '50%',
+            width: '100%',
+            height: '400px',
             backgroundImage: `url(${fillerPic})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

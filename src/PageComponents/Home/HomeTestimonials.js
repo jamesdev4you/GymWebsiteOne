@@ -14,8 +14,20 @@ const HomeTestimonials = () => {
         backgroundColor: 'primary.main',
         height: 'auto',
         weight: '100%',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -40,6 +52,7 @@ const HomeTestimonials = () => {
           sx={{
             fontWeight: 'bold',
             color: 'secondary.main',
+            textAlign: 'center',
           }}
         >
           THE RESULTS YOU CAN EXPECT
@@ -90,11 +103,24 @@ const HomeTestimonials = () => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginTop: '3em',
+            flexDirection: {
+              xl: 'row',
+              lg: 'row',
+              md: 'row',
+              sm: 'row',
+              xs: 'column',
+            },
           }}
         >
           <Box
             sx={{
-              width: '45%',
+              width: {
+                xl: '45%',
+                lg: '45%',
+                md: '45%',
+                sm: '100%',
+                xs: '100%',
+              },
               height: 'auto',
               backgroundColor: 'white',
               display: 'flex',
@@ -119,8 +145,20 @@ const HomeTestimonials = () => {
             />
             <Box
               sx={{
-                width: '100%',
-                height: '20vh',
+                width: {
+                  xl: '100%',
+                  lg: '100%',
+                  md: '100%',
+                  sm: '100%',
+                  xs: '90%',
+                },
+                height: {
+                  xl: '20vh',
+                  lg: '20vh',
+                  md: '20vh',
+                  sm: '30vh',
+                  xs: '25vh',
+                },
                 backgroundColor: '#f2f2f2',
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -133,8 +171,20 @@ const HomeTestimonials = () => {
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
                   backgroundPosition: 'bottom',
-                  height: '30px',
-                  width: '30px',
+                  height: {
+                    xl: '30px',
+                    lg: '30px',
+                    md: '30px',
+                    sm: '20px',
+                    xs: '20px',
+                  },
+                  width: {
+                    xl: '30px',
+                    lg: '30px',
+                    md: '30px',
+                    sm: '20px',
+                    xs: '20px',
+                  },
                   marginTop: '.2em',
                 }}
               />
@@ -179,7 +229,22 @@ const HomeTestimonials = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'space-between',
+                flexDirection: {
+                  xl: 'row',
+                  lg: 'row',
+                  md: 'row',
+                  sm: 'row',
+                  xs: 'column',
+                },
+                alignItems: 'center',
                 width: '100%',
+                gap: {
+                  xl: '0px',
+                  lg: '0px',
+                  md: '0px',
+                  sm: '0px',
+                  xs: '2em',
+                },
               }}
             >
               <Box
@@ -188,7 +253,13 @@ const HomeTestimonials = () => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItem: 'center',
-                  width: '45%',
+                  width: {
+                    xl: '45%',
+                    lg: '45%',
+                    md: '45%',
+                    sm: '45%',
+                    xs: '80%',
+                  },
                   gap: '.5em',
                 }}
               >
@@ -216,15 +287,6 @@ const HomeTestimonials = () => {
                 >
                   ​CATHERINE COBURN
                 </Typography>
-                <Box
-                  sx={{
-                    height: '4vh',
-                    backgroundImage: `url(${Stars})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
               </Box>
               <Box
                 sx={{
@@ -232,7 +294,13 @@ const HomeTestimonials = () => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItem: 'center',
-                  width: '45%',
+                  width: {
+                    xl: '45%',
+                    lg: '45%',
+                    md: '45%',
+                    sm: '45%',
+                    xs: '80%',
+                  },
                   gap: '.5em',
                 }}
               >
@@ -260,21 +328,18 @@ const HomeTestimonials = () => {
                 >
                   SHAY ELAHSOGLU
                 </Typography>
-                <Box
-                  sx={{
-                    height: '4vh',
-                    backgroundImage: `url(${Stars})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
               </Box>
             </Box>
           </Box>
           <Box
             sx={{
-              width: '45%',
+              width: {
+                xl: '45%',
+                lg: '45%',
+                md: '45%',
+                sm: '100%',
+                xs: '100%',
+              },
               height: 'auto',
               backgroundColor: 'white',
               display: 'flex',
@@ -299,8 +364,20 @@ const HomeTestimonials = () => {
             />
             <Box
               sx={{
-                width: '100%',
-                height: '20vh',
+                width: {
+                  xl: '100%',
+                  lg: '100%',
+                  md: '100%',
+                  sm: '100%',
+                  xs: '90%',
+                },
+                height: {
+                  xl: '20vh',
+                  lg: '20vh',
+                  md: '20vh',
+                  sm: '30vh',
+                  xs: '25vh',
+                },
                 backgroundColor: '#f2f2f2',
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -313,8 +390,20 @@ const HomeTestimonials = () => {
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
                   backgroundPosition: 'bottom',
-                  height: '30px',
-                  width: '30px',
+                  height: {
+                    xl: '30px',
+                    lg: '30px',
+                    md: '30px',
+                    sm: '20px',
+                    xs: '20px',
+                  },
+                  width: {
+                    xl: '30px',
+                    lg: '30px',
+                    md: '30px',
+                    sm: '20px',
+                    xs: '20px',
+                  },
                 }}
               />
               <Box
@@ -359,7 +448,22 @@ const HomeTestimonials = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'space-between',
+                flexDirection: {
+                  xl: 'row',
+                  lg: 'row',
+                  md: 'row',
+                  sm: 'row',
+                  xs: 'column',
+                },
+                alignItems: 'center',
                 width: '100%',
+                gap: {
+                  xl: '0px',
+                  lg: '0px',
+                  md: '0px',
+                  sm: '0px',
+                  xs: '2em',
+                },
               }}
             >
               <Box
@@ -368,7 +472,13 @@ const HomeTestimonials = () => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItem: 'center',
-                  width: '45%',
+                  width: {
+                    xl: '45%',
+                    lg: '45%',
+                    md: '45%',
+                    sm: '45%',
+                    xs: '80%',
+                  },
                   gap: '.5em',
                 }}
               >
@@ -396,15 +506,6 @@ const HomeTestimonials = () => {
                 >
                   ​CATHERINE COBURN
                 </Typography>
-                <Box
-                  sx={{
-                    height: '4vh',
-                    backgroundImage: `url(${Stars})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
               </Box>
               <Box
                 sx={{
@@ -412,7 +513,13 @@ const HomeTestimonials = () => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItem: 'center',
-                  width: '45%',
+                  width: {
+                    xl: '45%',
+                    lg: '45%',
+                    md: '45%',
+                    sm: '45%',
+                    xs: '80%',
+                  },
                   gap: '.5em',
                 }}
               >
@@ -440,15 +547,6 @@ const HomeTestimonials = () => {
                 >
                   SHAY ELAHSOGLU
                 </Typography>
-                <Box
-                  sx={{
-                    height: '4vh',
-                    backgroundImage: `url(${Stars})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
               </Box>
             </Box>
           </Box>

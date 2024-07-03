@@ -10,18 +10,56 @@ const AboutTrainer = () => {
     <Box
       sx={{
         width: '100%',
-        height: '60vh',
+        height: {
+          xl: '60vh',
+          lg: '60vh',
+          md: 'auto',
+          sm: 'auto',
+          xs: 'auto',
+        },
         backgroundColor: 'primary.main',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        flexDirection: {
+          xl: 'row',
+          lg: 'row',
+          md: 'row',
+          sm: 'column',
+          xs: 'column',
+        },
       }}
     >
       <Box
         sx={{
-          width: '25%',
+          width: {
+            xl: '25%',
+            lg: '40%',
+            md: '0px',
+            sm: '0px',
+            xs: '0px',
+          },
+          display: {
+            xl: 'flex',
+            lg: 'flex',
+            md: 'none',
+            sm: 'none',
+            xs: 'none',
+          },
           height: '50vh',
           backgroundImage: `url(${Trainer})`,
           backgroundRepeat: 'no-repeat',
@@ -31,8 +69,20 @@ const AboutTrainer = () => {
       />
       <Box
         sx={{
-          height: '55vh',
-          width: '70%',
+          height: {
+            xl: '55vh',
+            lg: '55vh',
+            md: 'auto',
+            sm: 'auto',
+            xs: 'auto',
+          },
+          width: {
+            xl: '70%',
+            lg: '70%',
+            md: '90%',
+            sm: '90%',
+            xs: '100%',
+          },
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'start',

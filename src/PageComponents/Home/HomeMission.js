@@ -7,12 +7,36 @@ const HomeMission = () => {
   return (
     <Box
       sx={{
-        width: '100%',
         height: 'auto',
-        paddingLeft: '22em',
-        paddingRight: '22em',
-        paddingTop: '3em',
-        paddingBottom: '3em',
+        weight: '100%',
+        paddingTop: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '3em',
+        },
+        paddingBottom: {
+          xl: '5em',
+          lg: '5em',
+          md: '1em',
+          sm: '1em',
+          xs: '3em',
+        },
+        paddingLeft: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '18em',
+          md: '12em',
+          sm: '2em',
+          xs: '1em',
+        },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
