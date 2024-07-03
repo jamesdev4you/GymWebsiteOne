@@ -12,10 +12,35 @@ const OnePTContent = () => {
     <Box
       sx={{
         display: 'flex',
-        alignItems: 'start',
+        alignItems: {
+          xl: 'start',
+          lg: 'start',
+          md: 'start',
+          sm: 'center',
+          xs: 'center',
+        },
         justifyContent: 'space-between',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '12em',
+          md: '5em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '12em',
+          md: '5em',
+          sm: '2em',
+          xs: '1em',
+        },
+        flexDirection: {
+          xl: 'row',
+          lg: 'row',
+          md: 'row',
+          sm: 'column-reverse',
+          xs: 'column-reverse',
+        },
         marginTop: '2em',
         marginBottom: '5em',
         gap: '2em',
@@ -26,7 +51,13 @@ const OnePTContent = () => {
     >
       <Box
         sx={{
-          width: '55%',
+          width: {
+            xl: '55%',
+            lg: '55%',
+            md: '55%',
+            sm: '80%',
+            xs: '100%',
+          },
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
@@ -151,7 +182,13 @@ const OnePTContent = () => {
       </Box>
       <Box
         sx={{
-          width: '45%',
+          width: {
+            xl: '45%',
+            lg: '45%',
+            md: '45%',
+            sm: '80%',
+            xs: '100%',
+          },
           backgroundColor: 'rgb(247, 247, 247)',
           height: '100%',
           display: 'flex',

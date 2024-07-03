@@ -116,8 +116,20 @@ export default function NavBar(props) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            marginLeft: '20em',
-            marginRight: '22em',
+            marginLeft: {
+              xl: '20em',
+              lg: '12em',
+              md: '5em',
+              sm: '2em',
+              xs: '1em',
+            },
+            marginRight: {
+              xl: '20em',
+              lg: '12em',
+              md: '5em',
+              sm: '2em',
+              xs: '1em',
+            },
           }}
         >
           <IconButton
@@ -132,7 +144,7 @@ export default function NavBar(props) {
           <Box
             alt='yooo'
             sx={{
-              display: { sm: 'none', md: 'block' },
+              display: 'block',
               height: '100px',
               width: '100px',
               marginLeft: {
