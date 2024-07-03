@@ -75,29 +75,60 @@ export default function NavBar(props) {
   };
 
   const drawer = (
-    <Box
-      onClick={handleDrawerToggle}
-      sx={{ textAlign: 'center', backgroundColor: 'primary.main' }}
-    >
+    <Box sx={{ textAlign: 'center', backgroundColor: 'primary.main' }}>
       <img src={Logo} alt='yooo' style={{ height: '150px', width: '150px' }} />
       <Divider sx={{ backgroundColor: 'primary.main' }} />
       <List sx={{ backgroundColor: 'primary.main' }}>
-        {navItems.map((item) => (
-          <ListItem key={item.text} sx={{ margin: '15px 0px' }} disablePadding>
-            <NavLink
-              style={{
-                textDecoration: 'none',
-                color: '#1B1E1E',
-                fontFamily: 'Ubuntu',
-                fontSize: '20px',
-                margin: 'auto',
-              }}
-              to={item.href}
-            >
-              {item.text}
-            </NavLink>
-          </ListItem>
-        ))}
+        {navItems.map((item) =>
+          item.submenu ? (
+            <ListItem>
+              <NavLink
+                className='menu_link'
+                style={{
+                  fontFamily: 'Birds',
+                  textTransform: 'none',
+                }}
+                onClick={handleSubmenuOpen}
+              >
+                {item.text}
+              </NavLink>
+              <Menu
+                anchorEl={submenuAnchorEl}
+                open={Boolean(submenuAnchorEl)}
+                onClose={handleSubmenuClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                {item.submenu.map((submenuItem) => (
+                  <MenuItem
+                    key={submenuItem.href}
+                    onClick={() => {
+                      handleSubmenuClose();
+                      handleDrawerToggle();
+                    }}
+                    component={NavLink}
+                    to={submenuItem.href}
+                    sx={{ height: '50px' }}
+                  >
+                    {submenuItem.text}
+                  </MenuItem>
+                ))}
+              </Menu>
+            </ListItem>
+          ) : (
+            <ListItem onClick={handleDrawerToggle}>
+              <NavLink
+                key={item.href}
+                className='menu_link'
+                style={{ fontFamily: 'Birds', textTransform: 'none' }}
+                to={item.href}
+              >
+                {item.text}
+              </NavLink>
+            </ListItem>
+          )
+        )}
       </List>
     </Box>
   );
@@ -165,7 +196,6 @@ export default function NavBar(props) {
               display: { xs: 'none', sm: 'none', md: 'block' },
             }}
           >
-            {console.log(navItems, 'yo')}
             {navItems.map((item) =>
               item.submenu ? (
                 <>
@@ -227,7 +257,7 @@ export default function NavBar(props) {
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              backgroundColor: '#E4DCC0',
+              backgroundColor: 'primary.main',
             },
           }}
         >
