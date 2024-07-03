@@ -14,19 +14,44 @@ const TrainWithUsContent = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingLeft: '22em',
-        paddingRight: '22em',
+        paddingLeft: {
+          xl: '20em',
+          lg: '10em',
+          md: '8em',
+          sm: '2em',
+          xs: '1em',
+        },
+        paddingRight: {
+          xl: '20em',
+          lg: '10em',
+          md: '8em',
+          sm: '2em',
+          xs: '1em',
+        },
+        flexDirection: {
+          xl: 'row',
+          lg: 'row',
+          md: 'row',
+          sm: 'column',
+          xs: 'column',
+        },
         marginTop: '5em',
         marginBottom: '5em',
         gap: '2em',
         backgroundColor: 'white',
         width: '100%',
-        height: '100vh',
+        height: 'auto',
       }}
     >
       <Box
         sx={{
-          width: '45%',
+          width: {
+            xl: '45%',
+            lg: '45%',
+            md: '45%',
+            sm: '90%',
+            xs: '100%',
+          },
           backgroundColor: 'rgb(247, 247, 247)',
           height: '100%',
           display: 'flex',
@@ -36,7 +61,7 @@ const TrainWithUsContent = () => {
       >
         <Typography
           variant='h3'
-          sx={{ color: 'secondary.main', width: '80%', textAlign: 'left' }}
+          sx={{ color: 'secondary.main', width: '100%', textAlign: 'left' }}
         >
           CONTACT US
         </Typography>
@@ -317,7 +342,13 @@ const TrainWithUsContent = () => {
       </Box>
       <Box
         sx={{
-          width: '47%',
+          width: {
+            xl: '47%',
+            lg: '47%',
+            md: '47%',
+            sm: '90%',
+            xs: '100%',
+          },
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
@@ -379,7 +410,7 @@ const TrainWithUsContent = () => {
           </Typography>
           <iframe
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28144.803340179373!2d-82.3343366!3d28.1434311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b6eb09dcc495%3A0x3f530dde20072124!2sKingshyre%20At%20Cross%20Creek!5e0!3m2!1sen!2sus!4v1719492785736!5m2!1sen!2sus'
-            width='500'
+            width='300'
             height='200'
             style={{ border: '0', marginTop: '1em' }}
             allowfullscreen=''
@@ -392,15 +423,28 @@ const TrainWithUsContent = () => {
             height: 'auto',
             width: '100%',
             display: 'flex',
-            alignItems: 'center',
+            alignItems: {
+              xl: 'center',
+              lg: 'center',
+              md: 'start',
+              sm: 'start',
+              xs: 'start',
+            },
             justifyContent: 'space-between',
             marginTop: '3em',
+            flexDirection: {
+              xl: 'row',
+              lg: 'row',
+              md: 'column',
+              sm: 'column',
+              xs: 'column',
+            },
           }}
         >
           <Box
             sx={{
               width: '42%',
-              height: '10vh',
+              height: { xl: '10vh', lg: '10vh', md: 'auto' },
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'start',
@@ -432,7 +476,7 @@ const TrainWithUsContent = () => {
           <Box
             sx={{
               width: '40%',
-              height: '10vh',
+              height: { xl: '10vh', lg: '10vh', md: 'auto' },
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'start',
@@ -446,6 +490,13 @@ const TrainWithUsContent = () => {
                 color: 'secondary.main',
                 width: '80%',
                 textAlign: 'left',
+                marginTop: {
+                  xl: '0px',
+                  lg: '0px',
+                  md: '0px',
+                  sm: '1em',
+                  xs: '1em',
+                },
               }}
             >
               EMAIL
