@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import NutritionHeader from './NutritionHeader';
 import NutritionContent from './NutritionContent';
+import Footer from '../Footer/Footer';
 
 const NutritionCoaching = () => {
   return (
@@ -19,6 +20,7 @@ const NutritionCoaching = () => {
     >
       <NutritionHeader />
       <NutritionContent />
+      <Footer />
     </Box>
   );
 };

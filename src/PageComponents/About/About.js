@@ -7,6 +7,7 @@ import AboutTrainer from './AboutTrainer';
 import Trainer from '../../assets/trainer.png';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import Footer from '../Footer/Footer';
 
 const About = () => {
   return (
@@ -169,6 +170,7 @@ const About = () => {
           sign? This is it.
         </Typography>
       </Box>
+      <Footer />
     </Box>
   );
 };

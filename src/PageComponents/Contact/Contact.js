@@ -5,6 +5,7 @@ import ContactBeforeAfter from './ContactBeforeAfter.js';
 import ContactAbout from './ContactAbout.js';
 import ContactTestimonials from './ContactTestimonials.js';
 import ContactFreeTrial from './ContactFreeTrial.js';
+import Footer from '../Footer/Footer.js';
 
 const Contact = () => {
   return (
@@ -25,6 +26,7 @@ const Contact = () => {
       <ContactTestimonials />
       <ContactAbout />
       <ContactFreeTrial />
+      <Footer />
     </Box>
   );
 };

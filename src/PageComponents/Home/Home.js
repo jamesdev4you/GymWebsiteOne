@@ -6,6 +6,7 @@ import HomeOverlap from './HomeOverlap.js';
 import HomeTwoOptions from './HomeTwoOptions.js';
 import HomeTestimonials from './HomeTestimonials.js';
 import HomeMission from './HomeMission.js';
+import Footer from '../Footer/Footer.js';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <HomeTwoOptions />
       <HomeTestimonials />
       <HomeMission />
+      <Footer />
     </Box>
   );
 };

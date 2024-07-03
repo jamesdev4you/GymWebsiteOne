@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import SmallGroupPTHeader from './SmallGroupPTHeader';
 import SmallGroupPTContent from './SmallGroupPTContent';
+import Footer from '../Footer/Footer';
 
 const SmallGroupPT = () => {
   return (
@@ -19,6 +20,7 @@ const SmallGroupPT = () => {
     >
       <SmallGroupPTHeader />
       <SmallGroupPTContent />
+      <Footer />
     </Box>
   );
 };

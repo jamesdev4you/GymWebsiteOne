@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import OnePTHeader from './OnePTHeader';
 import OnePTContent from './OnePTContent';
+import Footer from '../Footer/Footer';
 
 const OnePT = () => {
   return (
@@ -19,6 +20,7 @@ const OnePT = () => {
     >
       <OnePTHeader />
       <OnePTContent />
+      <Footer />
     </Box>
   );
 };

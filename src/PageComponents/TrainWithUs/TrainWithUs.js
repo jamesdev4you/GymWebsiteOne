@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import TrainWithUsHeader from './TrainWithUsHeader';
 import TrainWithUsContent from './TrainWithUsContent.js';
+import Footer from '../Footer/Footer.js';
 
 const TrainWithUs = () => {
   return (
@@ -19,6 +20,7 @@ const TrainWithUs = () => {
     >
       <TrainWithUsHeader />
       <TrainWithUsContent />
+      <Footer />
     </Box>
   );
 };
